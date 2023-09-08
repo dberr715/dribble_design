@@ -1,11 +1,38 @@
 
+body {
+    display: flex;
+    flex-direction: column;
+    z-index: 5;
+    }
+
+footer {
+    text-align: left;
+    font-size: 10px;
+}
+
 h1 {
     text-align: center;
     size: 4rem;
+    position: relative; 
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -85%); 
+    padding: 10px;
+    border-radius: 5px;
+    z-index: 1;
+    font-family: cursive;
+    background-color: rgba(200, 200, 200,20%);
+    font-size: 2em;
+    
 }
 
 h2 {
+    position: relative;
+    z-index: 2;
+    font-family: cursive;
+    font-size: 1.5em;
     text-align: center;
+    
 }
 
 nav {
@@ -57,11 +84,7 @@ nav a {
     margin-right: 4px;
 }
 
-body {
-display: flex;
-flex-direction: column;
-z-index: 5;
-}
+
 
 .image1 {
     width: 100%;
@@ -132,8 +155,14 @@ header {
 }
 
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 475px) {
     
+    .grid-container{
+        display:grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 10px;
+
+    }
     .image-container {
         text-align: center;
     }
@@ -151,33 +180,32 @@ header {
         width: 100%; 
     }
 
-    .captions {
+.captions {
         position: relative;
         text-align: left;
     }
 
     
-    .captions div {
+.captions div {
         margin-top: 20px; 
     }
 
     
-    .para1 {
+.para1 {
         font-size: medium;
     }
 
-    .para2,
-    .para4 {
+.para2,
+.para4 {
         font-size: small;
     }
 
     
-    nav {
-        
+ nav {    
         align-items: center;
     }
 
-    .ul1 {
+.ul1 {
         text-align: center;
     }
 }
@@ -190,25 +218,7 @@ header {
 
 
 
-h1{
-    position: relative; 
-    top: 50%; 
-    left: 50%; 
-    transform: translate(-50%, -85%); 
-    padding: 10px;
-    border-radius: 5px;
-    z-index: 1;
-    font-family: cursive;
-    background-color: rgba(200, 200, 200,20%);
-    font-size: 2em;
-}
-h2 {
-    position: relative;
-    z-index: 2;
-    font-family: cursive;
-    font-size: 1.5em;
-    
-}
+
 .captions {
     position: absolute;
     top: 50%;
@@ -218,3 +228,7 @@ h2 {
     color: rgb(10, 10, 10);
     z-index: 1;
 }
+
+.vvv { background-image: linear-gradient(to right, #040000,rgb(114, 136, 222), #1009eb);
+    -webkit-background-clip: text;
+    color: transparent;}
