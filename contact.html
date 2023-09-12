@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Contact</title>
     <link rel="stylesheet" type="text/css" href="./styles/style.css" />
   </head>
   <body>
@@ -28,27 +28,56 @@
         </div>
         <h2 style="background-color: transparent;">Contact Us</h2>
       </div>
+      <div id="myModal" class="modal">
+        <div class="modal-content">
+          <div class="close">X</div>
+          <div class="message-box">
+            <p id="modalMessage"></p>
+          </div>
+        </div>
+      </div>
+      
 
-      <span class="flex-container">
+
+      </div>
+      <div class="introForm introText"> Please enter your information and click submit.<br>
         
+        <form class="contactForm" >
+          <div class="inputRow">
+            <input type="text" id="firstName" placeholder="First Name">
+            <input type="text" id="lastName" placeholder="Last Name">
+          </div>
+          <div class="inputRow">
+            <input type="text" id="phoneNumber" placeholder="Phone Number">
+            <input type="text" id="email" placeholder="Email">
+          </div>
+          <div class="inputRow button1" >
+            <input type="submit" id="button12" value="Submit Information">
+          </div>
+        </div>
+        </form>
+      <div class="flex-container">
+        <div class="row">
         <img src="images/istockphoto-1162167657-170667a.webp" class="image2" />
         <p class="para4">
-            Email: info@pixelcrafters.com
+            Email: info@gooddesings.com
 
             Phone: +1 (555) 123-4567
             
             Address: 123 Web Avenue, Suite 101
             New City, Digitaland, 54321
-        </p>
+        </p> </div>
+        <div class="row">
         <p class="para4">
             <strong><em>Social Media</em></strong>  <br><br>
 
-            Facebook: @PixelCraftersDesigns
-            Twitter: @PixelCrafters
-            Instagram: @PixelCraftersOfficial
+            Facebook: @goodDesigns<br>
+            Twitter: @goodDesigns<br>
+            Instagram: @goodDesignsOfficial
         </p>
         <img src="images/istockphoto-1162167657-170667a.webp" class="image3" />
-      </span>
+      </div>
+      </div>
     </main>
     <footer>Constructed to mimic <em>aprilford.com</em></footer>
   </body>

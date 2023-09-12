@@ -1,6 +1,6 @@
 const modal = document.getElementById("myModal");
 const submitButton = document.querySelector(
-  "#contactForm input[type='submit']"
+  "#button1"
 );
 const closeButton = document.querySelector(".close");
 
